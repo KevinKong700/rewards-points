@@ -1,26 +1,30 @@
-package com.retailer.rewards.pojo;
+package com.retailer.rewards.entity;
+
+import java.time.LocalDate;
 
 public class Transaction {
 
-    private int id;
+    private int transactionId;
     private int customerId;
     private int spend;
-
-    public Transaction(int id, int customerId, int spend) {
-        this.id = id;
-        this.customerId = customerId;
-        this.spend = spend;
-    }
+    private LocalDate date;
 
     public Transaction() {
     }
 
-    public int getId() {
-        return id;
+    public Transaction(int transactionId, int customerId, int spend, LocalDate date) {
+        this.transactionId = transactionId;
+        this.customerId = customerId;
+        this.spend = spend;
+        this.date = date;
     }
 
-    public void setId(int id) {
-        this.id = id;
+    public int getTransactionId() {
+        return transactionId;
+    }
+
+    public void setTransactionId(int transactionId) {
+        this.transactionId = transactionId;
     }
 
     public int getCustomerId() {
@@ -39,12 +43,21 @@ public class Transaction {
         this.spend = spend;
     }
 
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
     @Override
     public String toString() {
         return "Transaction{" +
-                "id=" + id +
+                "transactionId=" + transactionId +
                 ", customerId=" + customerId +
                 ", spend=" + spend +
+                ", date=" + date +
                 '}';
     }
 }

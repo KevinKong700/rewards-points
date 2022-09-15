@@ -1,4 +1,5 @@
-package com.retailer.rewards.pojo;
+package com.retailer.rewards.entity;
+
 
 public class Customer {
 
