@@ -7,9 +7,12 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CustomerServiceImpl implements CustomerService{
-    @Autowired
     private CustomerRepository customerRepo;
 
+    @Autowired
+    public CustomerServiceImpl(CustomerRepository customerRepo) {
+        this.customerRepo = customerRepo;
+    }
     /**
      * Save a customer object in the map
      */

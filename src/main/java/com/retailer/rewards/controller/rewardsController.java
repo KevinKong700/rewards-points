@@ -1,7 +1,6 @@
 package com.retailer.rewards.controller;
 
 import com.retailer.rewards.entity.Rewards;
-import com.retailer.rewards.entity.Transaction;
 import com.retailer.rewards.service.TransactionServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,9 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api")
 public class rewardsController {
-
-    @Autowired
     TransactionServiceImpl transaction;
+    @Autowired
+    public rewardsController(TransactionServiceImpl transaction) {
+        this.transaction = transaction;
+    }
 
     /**
      *Given a customer id, the method will return a rewards object contains all information for rewards points
