@@ -11,6 +11,7 @@ public class CustomerRepository {
     private static Map<Integer, Customer> customer = new HashMap<>();
 
     static {
+
         customer.put(1, new Customer(1, "user1"));
         customer.put(2, new Customer(2, "user2"));
         customer.put(3, new Customer(3, "user3"));

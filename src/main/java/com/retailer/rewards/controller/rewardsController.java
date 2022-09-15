@@ -3,9 +3,12 @@ package com.retailer.rewards.controller;
 import com.retailer.rewards.entity.Rewards;
 import com.retailer.rewards.service.TransactionServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.nio.file.attribute.UserPrincipalNotFoundException;
 
 
 @RestController
@@ -25,7 +28,7 @@ public class rewardsController {
      * and total rewards points
      */
     @RequestMapping("/{uid}/rewards")
-    public Rewards handle01(@PathVariable("uid") int id) {
+    public Rewards getRewards(@PathVariable("uid") int id) {
         Rewards rewards = transaction.getRewardsByCustomerId(id);
         return rewards;
     }
