@@ -9,7 +9,7 @@ each customer per month and total.
 
 - This REST API is used to calculate the customer rewards points by using customer id
 - HashMap data structure is used to mock data set
-
+- Start the application by running RewardsPointsApplication 
 
 
 customer points page with customer id:
