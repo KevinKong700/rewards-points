@@ -14,9 +14,9 @@ each customer per month and total.
 ### Run
 1. Clone the application
 
-
-    `https://github.com/KevinKong700/rewards-points.git`
-
+````
+    https://github.com/KevinKong700/rewards-points.git
+````
 
 2. Build and run the application with Maven
 - The application can be run as a Packaged Application
@@ -30,9 +30,9 @@ each customer per month and total.
 
 - The application can also be run by using Maven plugin
 
-
-    `mvn spring-boot:run`
-
+````
+    mvn spring-boot:run
+````
 
 - Or Start the application from IDE by running
   [RewardsPointsApplication class](https://github.com/KevinKong700/rewards-points/blob/main/src/main/java/com/retailer/rewards/RewardsPointsApplication.java)
