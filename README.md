@@ -30,7 +30,6 @@ each customer per month and total.
 ### Test
 - Technologies used - Spring Test, JUnit
 
-
 ### Todo
 - Jenkins integration
 - Http authentication
