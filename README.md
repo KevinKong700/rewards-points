@@ -23,15 +23,15 @@ each customer per month and total.
 
 
 ````
-    mvn package
-    java -jar target/rewards-points-0.0.1-SNAPSHOT.jar
+mvn package
+java -jar target/rewards-points-0.0.1-SNAPSHOT.jar
 ````
 
 
 - The application can also be run by using Maven plugin
 
 
-        `mvn spring-boot:run`
+    `mvn spring-boot:run`
 
 
 - Or Start the application from IDE by running
