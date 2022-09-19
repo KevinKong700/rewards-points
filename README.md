@@ -17,17 +17,19 @@ each customer per month and total.
    `https://github.com/KevinKong700/rewards-points.git`
 
 
-2. Build and run the application with maven
+2. Build and run the application with Maven
+- The application can be run as a Packaged Application
 
    `mvn package`
 
    `java -jar target/rewards-points-0.0.1-SNAPSHOT.jar`
 
-
-   or it can be run by using
+- The application can also be run by using Maven plugin
 
    `mvn spring-boot:run`
 
+- Or Start the application from IDE by running
+  [RewardsPointsApplication class](https://github.com/KevinKong700/rewards-points/blob/main/src/main/java/com/retailer/rewards/RewardsPointsApplication.java)
 ### Design
 - Technologies used - Spring Boot
 
