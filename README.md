@@ -16,11 +16,11 @@ each customer per month and total.
 ### Design
 - Technologies used - Spring Boot
 
-| package                         | Description                                                                                           |
-|---------------------------------|-------------------------------------------------------------------------------------------------------|
-| com.retailer.rewards.controller | Handle the user's request to return a reward points object                                            |
-| com.retailer.rewards.dao        | Mock the data set using HashMap for customer and transaction repository                               |
-| com.retailer.rewards.entity     | Contain Customer, Transaction and Rewards persistence domain object                                   |
+| package                         | Description                                                                                       |
+|---------------------------------|---------------------------------------------------------------------------------------------------|
+| com.retailer.rewards.controller | Handle user's request to return a reward points object                                            |
+| com.retailer.rewards.dao        | Mock the data set using HashMap for customer and transaction repository                           |
+| com.retailer.rewards.entity     | Contain Customer, Transaction and Rewards persistence domain object                               |
 | com.retailer.rewards.service    | Contain all logics to handle the exchange of information and methods to retrieve user's reward points |
 
 | Method | URL                | Description                                                  |
