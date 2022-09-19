@@ -9,15 +9,31 @@ Given a record of every transaction during a three-month period, calculate the r
 each customer per month and total.
 
 - This REST API is used to calculate the customer rewards points by using customer id
-- HashMap data structure is used to mock data set
 
-### Main application
-- Technologies used - Spring Boot
+
+### Run
 - Start the application by running [RewardsPointsApplication class](https://github.com/KevinKong700/rewards-points/blob/main/src/main/java/com/retailer/rewards/RewardsPointsApplication.java)
+### Design
+- Technologies used - Spring Boot
+
+| package                         | Description                                                                                           |
+|---------------------------------|-------------------------------------------------------------------------------------------------------|
+| com.retailer.rewards.controller | Handle the user's request to return a reward points object                                            |
+| com.retailer.rewards.dao        | Mock the data set using HashMap for customer and transaction repository                               |
+| com.retailer.rewards.entity     | Contain Customer, Transaction and Rewards persistence domain object                                   |
+| com.retailer.rewards.service    | Contain all logics to handle the exchange of information and methods to retrieve user's reward points |
+
+| Method | URL                | Description                                                  |
+|--------|--------------------|--------------------------------------------------------------|
+| GET    | /api/{cId}/rewards | Retrieve each month and total rewards points in three months |
+
 ### Test
 - Technologies used - Spring Test, JUnit
 
 
-| Method | URL                       | Description                                                  |
-|--------|---------------------------|--------------------------------------------------------------|
-| GET    | /api/{customerId}/rewards | Retrieve each month and total rewards points in three months |
+### Todo
+- Jenkins integration
+- Http authentication
+
+## Contributor
+Kevin Kong
