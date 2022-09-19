@@ -55,7 +55,7 @@ each customer per month and total.
 
 ### Todo
 - Jenkins integration
-- Http authentication
+- HTTP authentication
 
 ## Contributor
 Kevin Kong
