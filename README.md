@@ -8,7 +8,7 @@ dollar spent over $50 in each transaction
 Given a record of every transaction during a three-month period, calculate the reward points earned for
 each customer per month and total.
 
-- This REST API is used to calculate the customer rewards points by using customer id
+- This REST API is used to calculate the customer reward points by using customer id
 
 
 ### Run
