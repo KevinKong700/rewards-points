@@ -18,7 +18,7 @@ each customer per month and total.
 
 | Package                         | Description                                                                                           |
 |---------------------------------|-------------------------------------------------------------------------------------------------------|
-| com.retailer.rewards.controller | Handle user's request to return a reward points object                                                |
+| com.retailer.rewards.controller | Handle user's request and return a reward points object                                               |
 | com.retailer.rewards.dao        | Mock the data set using HashMap for customer and transaction repository                               |
 | com.retailer.rewards.entity     | Contain Customer, Transaction and Rewards persistence domain object                                   |
 | com.retailer.rewards.service    | Contain all logics to handle the exchange of information and methods to retrieve user's reward points |
