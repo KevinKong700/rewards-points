@@ -1,3 +1,4 @@
+# Rewards points API
 A retailer offers a rewards program to its customers, awarding points based on each recorded purchase.
 
 A customer receives 2 points for every dollar spent over $100 in each transaction, plus 1 point for every
@@ -9,9 +10,14 @@ each customer per month and total.
 
 - This REST API is used to calculate the customer rewards points by using customer id
 - HashMap data structure is used to mock data set
-- Start the application by running RewardsPointsApplication 
+
+### Main application
+- Technologies used - Spring Boot
+- Start the application by running [RewardsPointsApplication class](https://github.com/KevinKong700/rewards-points/blob/main/src/main/java/com/retailer/rewards/RewardsPointsApplication.java)
+### Test
+- Technologies used - Spring Test, JUnit
 
 
-customer points page with customer id:
-
-    http://localhost:8080/api/{customerId}/rewards
+| Method | URL                       | Description                                                  |
+|--------|---------------------------|--------------------------------------------------------------|
+| GET    | /api/{customerId}/rewards | Retrieve each month and total rewards points in three months |
